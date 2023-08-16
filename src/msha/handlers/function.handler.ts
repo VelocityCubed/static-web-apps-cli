@@ -40,6 +40,9 @@ function injectClientPrincipalCookies(req: http.ClientRequest) {
 
     const buff = Buffer.from(JSON.stringify(user), "utf-8");
     const token = buff.toString("base64");
+    req.setHeader("X-MS-CLIENT-PRINCIPAL-ID", user?.userId as string);
+    logger.log(JSON.stringify(user?.userDetails));
+    req.setHeader("X-MS-CLIENT-PRINCIPAL-NAME", user?.userDetails as string);
     req.setHeader("X-MS-CLIENT-PRINCIPAL", token);
     logger.silly(` - X-MS-CLIENT-PRINCIPAL: ${chalk.yellow(req.getHeader("X-MS-CLIENT-PRINCIPAL"))}`);
 

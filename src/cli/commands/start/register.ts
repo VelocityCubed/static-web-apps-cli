@@ -62,7 +62,7 @@ export default function registerCommand(program: Command) {
         }
       }
 
-      console.warn(chalk.yellow("***********************************************************************"));
+      console.warn(chalk.yellow("***************************VELOCITY***********************************"));
       console.warn(chalk.yellow("* WARNING: This emulator may not match the cloud environment exactly. *"));
       console.warn(chalk.yellow("* Always deploy and test your app in Azure.                           *"));
       console.warn(chalk.yellow("***********************************************************************"));

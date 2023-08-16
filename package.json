@@ -1,7 +1,7 @@
 {
-  "name": "@azure/static-web-apps-cli",
+  "name": "@velocitycubed/static-web-apps-cli",
   "version": "1.1.5-alpha",
-  "description": "Azure Static Web Apps CLI",
+  "description": "Velocity Static Web Apps CLI",
   "scripts": {
     "test": "jest --detectOpenHandles --silent --verbose",
     "e2e:start:static": "npm run build && node ./dist/cli/bin.js --config ./cypress/fixtures/static/swa-cli.config.json start static",
@@ -24,7 +24,7 @@
     "release:changelog": "CI=1 semantic-release"
   },
   "bin": {
-    "swa": "dist/cli/bin.js"
+    "swav": "dist/cli/bin.js"
   },
   "author": "Microsoft Corporation",
   "dependencies": {
@@ -99,7 +99,7 @@
     "ts-jest": "^27.0.0",
     "typescript": "^4.2.4"
   },
-  "homepage": "https://github.com/azure/static-web-apps-cli#readme",
+  "homepage": "https://github.com/VelocityCubed/static-web-apps-cli#readme",
   "private": false,
   "keywords": [
     "azure",
@@ -119,11 +119,11 @@
     "python"
   ],
   "bugs": {
-    "url": "https://github.com/azure/static-web-apps-cli/issues"
+    "url": "https://github.com/VelocityCubed/static-web-apps-cli/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azure/static-web-apps-cli.git"
+    "url": "https://github.com/VelocityCubed/static-web-apps-cli.git"
   },
   "license": "MIT",
   "husky": {
